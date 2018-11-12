@@ -10,26 +10,29 @@
 		position: absolute
 		top -10px
 		left -10px
-		background-image: linear-gradient( 120deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
+		background-image: linear-gradient( -60deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
 		opacity: 0.122;
 		position: absolute;
 		border-radius: 50%
 		width: 761px;
 		height: 761px;
-		z-index: 1
-		left: -191px;
-		top: -125px;
+		z-index: 2
+		left: -272px;
+		top: -168px;
 	&:after
 		content ''
 		position: absolute
 		background-image: linear-gradient( 60deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
 		opacity: 0.122;
-		left: -141px;
-		top: -249px;
 		width: 595px;
 		height: 595px;
 		border-radius: 50%
-		z-index: 2
+		left: -229px;
+		top: -246px;
+		z-index: 1
+#main_title_container
+	position relative
+	z-index 10
 #header
 	padding: 29px 0
 	overflow hidden
@@ -116,6 +119,7 @@
 .video_wraper_main
 	max-width 335px
 	margin 0
+	z-index 9
 #mail_section
 	padding 18px 0 24px
 	border-radius: 3px;

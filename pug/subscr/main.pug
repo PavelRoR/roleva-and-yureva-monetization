@@ -1,13 +1,14 @@
 section#main
 	.container.main_container
 		img#main_img(src="img/main_img.png", alt="Главное изображение")
-		include ../header
-		p.pre Бесплатный 5-ти дневный онлайн-марафон
-		h1.main_title Быстрые деньги в частной практике
-		p.main_date с 17 по 19 декабря 
-			span 19:00 мск
-		p.main_authors Авторы курса: 
-			span Анна Ролева и Вероника Юрина
+		#main_title_container
+			include ../header
+			p.pre Бесплатный 5-ти дневный онлайн-марафон
+			h1.main_title Быстрые деньги в частной практике
+			p.main_date с 17 по 19 декабря 
+				span 19:00 мск
+			p.main_authors Авторы курса: 
+				span Анна Ролева и Вероника Юрина
 		.video_wrapper.video_wraper_main
 			iframe(src="https://youtube.com/embed/?rel=0&autoplay=0" allowfullscreen)
 		#mail_section

@@ -1,0 +1,26 @@
+section#what
+    .container
+        p.what_pretitle Заработай 
+            span 100 000р. 
+            | в частной практике за несколько дней, 
+            br
+            | с помощью пошаговой методики для тренеров, психологов и мастеров
+        h3.general_title.what_general_title Что будет на марафоне:
+        mixin whats(cl,h4,p)
+            .what_container
+                .what_container_img(class= cl)
+                h4.what_container_title= h4
+                p.what_containert_text= p
+        .row
+            .col-md-4.col-sm-4
+                +whats('what_container_img_1','Денежное мышление:','Как убрать шаблоны мышления блокирующие денежный рост')
+            .col-md-4.col-sm-4
+                +whats('what_container_img_2','Силовое поле тренера:','Как развить харизму и стать сильным тренером')
+            .col-md-4.col-sm-4
+                +whats('what_container_img_3','Маркетинг и продажи:','Как сделать так, чтобы продажи шли даже когда вы спите')
+        .row.what_row_2
+            .col-md-4.col-sm-4.col-md-offset-2.col-sm-offset-2
+                +whats('what_container_img_4','Инструменты получение заявок: ','Настройка рекламы и набор базы с нуля, без бюджета')
+            .col-md-4.col-sm-4
+                +whats('what_container_img_5','Консультации и тренинги:','Как создать продукт, который хотят купить и успешно продвигать его')
+        button.button.what_button(data-toggle="modal" data-target="#myModalForm") Записаться
