@@ -1,0 +1,21 @@
+section#reveiws
+    .container
+        h3.general_title.revs_general_title Отзывы учеников
+        .carousel.slide#carousel_text(data-ride="carousel" data-interval="false")
+            .carousel-inner(role="listbox")
+                .item.active
+                    a(href="img/certs/rev_1.jpg" data-fancybox="revs")
+                        img(src="img/certs/rev_1.jpg", alt="Отзыв 1")
+                .item
+                    a(href="img/certs/rev_2.jpg" data-fancybox="revs")
+                        img(src="img/certs/rev_2.jpg", alt="Отзыв 2")
+                .item
+                    a(href="img/certs/rev_3.jpg" data-fancybox="revs")
+                        img(src="img/certs/rev_3.jpg", alt="Отзыв 3")
+            ol.carousel-indicators
+                li(data-target="#carousel_text" data-slide-to="0" class="active")
+                li(data-target="#carousel_text" data-slide-to="1")
+                li(data-target="#carousel_text" data-slide-to="2")
+            .controls
+                a.left.carousel-control(href="#carousel_text" role="button" data-slide="prev") <
+                a.right.carousel-control(href="#carousel_text" role="button" data-slide="next") >
