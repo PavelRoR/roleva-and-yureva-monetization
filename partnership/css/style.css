@@ -269,7 +269,7 @@ POCHEMU
 	font-size: 18px;
 	line-height: 1.4;
 }
-.pochemu .block strong {
+.pochemu .block strong { 
 }
 .pochemu .photo {
 	display: block;
@@ -430,6 +430,16 @@ JOB
 	font-size: 23px;
 	text-align: center;
 	margin-bottom: 20px;
+}
+.job h3 {
+		font-size: 21px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.job h4 {
+		font-size: 19px;
+	margin-bottom: 20px;
+	margin-left: 10px;
 }
 .job span {
 	font-size: 20px;

@@ -6,14 +6,18 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(name="author" content="Master Vision")
 		meta(name="description" content="Бонус к онлайн-марафону по монетизации")
+		meta(property="fb:app_id" content="2030481470529055")
 		title Бонус к онлайн-марафону по монетизации
-		link(rel="icon" type="image/x-icon" href="favicon.ico")
-		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
 		link(rel="stylesheet" href="../css/bootstrap.min.css")
-		link(rel="stylesheet" href="../css/styles.css")
+		link(rel="stylesheet" href="../css/bonus_styles.css")
+		script(src="//vk.com/js/api/openapi.js?153")
+		script
+			| VK.init({apiId: 6314801,onlyWidgets: true});
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
-	body
+	body#bonus
 		noscript
 			img(src="https://vk.com/rtrg?p=VK-RTRG-11201-hHU9b" style="position:fixed; left:-999px;" alt="")
 		<!-- Yandex.Metrika counter -->
@@ -23,4 +27,77 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		h3.general_title В разработке...
+		div#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+		section#main
+			.container.main_container
+				#main_title_container
+					header#header
+						a(href="/", target="_blank")
+							img#logo(src="../img/logo.png", alt="Логотип")
+						.contacts
+							a.tel(href="callto:8-929-568-87-50")
+								i.fas.fa-phone
+								span 8-929-568-87-50
+							a.tel(href="callto:8-499-346-79-46")
+								i.fas.fa-phone
+								span 8-499-346-79-46
+							a.skype(href="skype:add?admin-mastervision")
+								i.fab.fa-skype
+								span admin-mastervision
+							a.email(href="mailto:info@mastervision.su")
+								i.fas.fa-envelope
+								span info@mastervision.su
+					p.pre Бонус от Анны и Вероники
+					h1.main_title 3 урока по монетизации
+					p.main_date 
+						span Старт курса: 
+						| 17 декабря, в 19:00 мск
+					.row
+						.col-md-4.col-sm-6
+							h4.bonus_main_subtitle Урок 1. 
+								span Как подобрать Целевую Аудиторию
+							.video_wrapper.bonus_video_wraper_main
+								iframe(src="https://youtube.com/embed/G6fEKnqncec?rel=0&autoplay=0" allowfullscreen)
+						.col-md-4.col-sm-6
+							h4.bonus_main_subtitle Урок 2. 
+								span Выбор модели для вашей практики
+							.video_wrapper.bonus_video_wraper_main
+								iframe(src="https://youtube.com/embed/hMOFW9P79Jk?rel=0&autoplay=0" allowfullscreen)
+						.col-md-4.col-sm-6.col-md-offset-0.col-sm-offset-3
+							h4.bonus_main_subtitle Урок 3. 
+								span Как найти клиентов
+							.video_wrapper.bonus_video_wraper_main
+								iframe(src="https://youtube.com/embed/TewIkOYsItQ?rel=0&autoplay=0" allowfullscreen)
+		section#bonus_feedback
+			.container
+				h3.general_title.feedback_general_title Ваши вопросы к Анне и Веронике пишите в формах ниже
+				.row
+					.col-md-6.col-sm-6
+						#vk
+							#vk_comments
+							script(type="text/javascript")
+								| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+					.col-md-6.col-sm-6
+						#fb
+							.fb-comments(data-href="https://mastervision.su/roleva-and-yureva-monetization/bonus/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
+		footer#footer
+			.container
+				.soc_buttons
+					h5 Хотите узнать больше? Вступайте в наши группы!
+					a(href="https://www.facebook.com/Mastervision1C/" target="_blank")
+						i(class="fab fa-facebook-f")
+					a(href="http://vk.com/mv_ezoterika" target="_blank")
+						i(class="fab fa-vk")
+					a(href="https://twitter.com/MastervisionEzo" target="_blank")
+						i(class="fab fa-twitter")
+					a(href="https://www.instagram.com/mastervision1/" target="_blank")
+						i(class="fab fa-instagram")
+					a(href="https://www.ok.ru/group/54472921710656" target="_blank")
+						i(class="fab fa-odnoklassniki")
+					a(href="https://www.youtube.com/channel/UCiJTdt19jRMRmYyCZac2Lvg/" target="_blank")
+						i(class="fab fa-youtube")
+					.clfix
+				p ИП Кудряшов Александр Анатольевич, Тюмень, проезд Летний, 9а, ИНН 720410077658, ОГРН 315723200065100
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")

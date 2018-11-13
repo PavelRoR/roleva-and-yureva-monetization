@@ -1,0 +1,412 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff2') format('woff2'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSansBold.eot');
+	src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansBold.woff') format('woff'),
+		 url('../fonts/OpenSansBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansCondensedBold';
+	src: url('../fonts/OpenSansCondensedBold.eot');
+	src: url('../fonts/OpenSansCondensedBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansCondensedBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansCondensedBold.woff') format('woff'),
+		 url('../fonts/OpenSansCondensedBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansCondensedBold.svg#OpenSansCondensedBold') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansCondensedLight';
+	src: url('../fonts/OpenSansCondensedLight.eot');
+	src: url('../fonts/OpenSansCondensedLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansCondensedLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansCondensedLight.woff') format('woff'),
+		 url('../fonts/OpenSansCondensedLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansCondensedLight.svg#OpenSansCondensedLight') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSansLight.eot');
+	src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansLight.woff') format('woff'),
+		 url('../fonts/OpenSansLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/OpenSansSemibold.eot');
+	src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansSemibold.woff2') format('woff2'),
+		 url('../fonts/OpenSansSemibold.woff') format('woff'),
+		 url('../fonts/OpenSansSemibold.ttf') format('truetype'),
+		 url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-family: 'OpenSans';
+	font-size: 16px
+	background-color #fff
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight: normal
+button
+	border none
+.video_wrapper
+	margin 0 auto
+	position relative
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #fff
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	margin 0 auto
+	width 100%
+	max-width 240px
+	border-radius: 10px;
+	background-color: rgb(254, 99, 69);
+	height: 60px;
+	line-height: 60px;
+	font-size: 15px;
+	font-family: "OpenSansBold", sans-serif;
+	color: #fff
+	text-align: center;
+	cursor pointer
+	text-transform: uppercase
+	transition: all .2s ease-in-out
+	&:focus
+		background-color: rgb(254, 99, 69);
+		color #fff
+		text-decoration: none 
+	&:hover
+		color #fff
+		text-decoration: none
+		background-color: rgb(254,141,119);
+.general_title
+	font-size: 37px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color: rgb(26, 54, 88);
+	line-height: 1.384;
+	text-align: center;
+#main
+	width 100%
+	padding 0 0 60px
+	background-color: #0091FB
+	background-image: linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(190,240,253) 12%, rgb(124,224,251) 28%, rgb(69,162,249) 48%, rgb(13,99,247) 99%);
+	text-align: center
+	overflow hidden
+.main_container
+	position relative
+	&:before
+		content: ''
+		position: absolute
+		top -10px
+		left -10px
+		background-image: linear-gradient( -60deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
+		opacity: 0.122;
+		position: absolute;
+		border-radius: 50%
+		width: 761px;
+		height: 761px;
+		z-index: 2
+		left: -272px;
+		top: -168px;
+	&:after
+		content ''
+		position: absolute
+		background-image: linear-gradient( 60deg, rgba(255,255,255,0) 0%, rgb(255,255,255) 100%);
+		opacity: 0.122;
+		width: 595px;
+		height: 595px;
+		border-radius: 50%
+		left: -229px;
+		top: -246px;
+		z-index: 1
+#main_title_container
+	position relative
+	z-index 10
+#header
+	padding: 14px 0
+	overflow hidden
+	z-index: 9
+	position relative
+	margin-bottom: 15px
+#logo
+	float: left
+	width 165px
+	height auto
+.contacts
+	float: right
+	text-align: right
+	line-height  22px
+	a
+		&:focus
+			text-decoration: none
+		i
+			color: #eec33f
+			font-size: 15px
+			margin: 0 10px 0 25px
+			line-height: 15px
+			vertical-align: baseline
+		i+span
+			line-height: 15px
+			font-size: 15px;
+			font-family: "OpenSans", sans-serif;
+			color: rgba(#fff)
+			opacity .8
+			text-align: right;
+			&:hover
+				text-decoration underline
+.fa-phone
+	transform: rotate(90deg)
+.tel:first-child
+	.fas-phone
+		margin-left: 0
+.pre
+	font-size: 16px;
+	font-family: "OpenSansSemibold", sans-serif;
+	text-transform: uppercase
+	color: rgb(254, 254, 254);
+	text-decoration: underline;
+	line-height: 1.3
+.main_title
+	font-size: 44px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color: rgb(254, 254, 254);
+	line-height: 1.164;
+	width 100%
+	max-width: 500px;
+	margin 16px auto 22px
+.main_date
+	font-size: 22px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color: rgb(254, 207, 62);
+	line-height: 28px
+	&:before
+		content: url(../img/calendar.png)
+		display: inline-block
+		margin-right: 22px
+		width: 28px
+		height 28px
+		vertical-align: bottom
+	span
+		color #fefefe
+.bonus_main_subtitle
+	font-family: 'OpenSansSemibold', sans-serif;
+	text-align: center
+	font-size: 22px
+	color rgb(254, 207, 62);
+	min-height 64px
+	margin: 40px 0 20px
+	span
+		color #fff
+.bonus_video_wraper_main
+	max-width 560px
+#bonus_feedback
+	padding 0 0 60px
+	min-height calc(100vh - 760px)
+.feedback_general_title
+	margin-bottom: 40px
+#vk
+#fb
+	box-shadow: 0px 1px 11.83px 1.17px rgba(0,0,0,0.1);
+#footer
+	width 100%
+	padding 30px 0
+	background-color: #0d1f72
+	text-align: center
+	h5
+		font-size: 24px;
+		color: rgb(255, 252, 252);
+		line-height: 1.042;
+		margin 0 0 20px
+		font-family: 'OpenSansSemibold', sans-serif;
+	p
+		font-size: 14px;
+		color: rgba(#fefefe, .6);
+		line-height: 1.3;
+		font-family: 'OpenSansLight', sans-serif
+.soc_buttons
+	width 100%
+	margin: 0 auto
+	a
+		display: inline-block
+		margin: 0 13px 20px
+		position relative
+		z-index: 1
+		border-radius: 50px
+		width: 32px;
+		height 32px
+		background-color: #fecf3e
+		i
+			width: 32px;
+			height: 32px;
+			color #0d1f72
+			font-size 18px
+			line-height 32px
+			position relative
+			z-index 9
+		&:hover
+			background-color: rgba(#fecf3e, .8)
+			i
+				color #0d1f72
+@media screen and (min-width 2295px)
+	.container
+		width: 1400px
+	.contacts a i
+	.contacts a i+span
+	#footer p
+		font-size: 18px
+		line-height: 18px
+	.pre
+		font-size: 20px
+	.main_title
+		margin 25px auto 30px
+	#bonus_feedback
+		min-height calc(100vh - 840px)
+	.soc_buttons a
+		width: 45px
+		height 45px
+		& i
+			width: 45px
+			height 45px
+			line-height 45px
+			font-size: 26px
+@media screen and (max-width 991px)
+	#logo
+		float: none
+		display block
+		margin: 0 auto
+	.contacts
+		float: none
+		text-align: center
+		a
+			display: inline-block
+			margin-top: 5px
+			i
+				margin 0 7px 0 14px
+	.bonus_main_subtitle
+		min-height 1px
+@media screen and (max-width 767px)
+	#main
+		background-image: none
+	#main
+	#bonus_feedback
+		padding-bottom: 40px
+	#vk
+		margin-bottom: 25px
+	#footer
+		padding 20px 0
+@media screen and (max-width 480px)
+	#main
+		padding-bottom: 30px
+	#header
+		margin-bottom: 5px
+	#logo
+		width: 150px
+	.contacts a
+		line-height: 12px
+	.contacts a i
+	.contacts a i + span
+		font-size: 12px
+		line-height: 12px
+	.main_title
+		font-size: 34px
+		margin 10px auto 15px
+	.main_date
+		font-size: 20px
+		line-height: 20px
+		&:before
+			height 20px
+			width: 20px;
+			margin-right: 12px;
+	.bonus_main_subtitle
+		font-size: 20px
+		margin: 20px 0 10px
+	#bonus_feedback
+		padding 30px 0
+	.feedback_general_title
+		font-size: 24px
+		margin-bottom: 30px
+		line-height: 1.3
+	#footer h5
+		font-size: 20px
+		margin-bottom: 8px
+	.soc_buttons a
+		margin 0 6px 8px
+	#footer p
+		font-size: 12px
+@media screen and (max-width 380px)
+	.pre
+		font-size: 14px
+	.main_title
+		font-size: 26px
+	.main_date
+		font-size: 18px
+		line-height: 18px
+		span
+			display: block
+		&:before
+			margin 0 0 15px
+			line-height: 10px
+	.bonus_main_subtitle
+	#footer h5
+		font-size: 18px
+	.feedback_general_title
+		font-size: 22px
