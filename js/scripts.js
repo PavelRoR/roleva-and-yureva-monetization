@@ -35,12 +35,12 @@ $(function () {
         $(".phone-block", this).removeClass("hide");
         $(".infront", this).addClass("hide");
         $(".infront_submit", this).addClass("hide");
-        $(".infront_submit", this).html("Зарегистрирован Ваш e-mail: " + email.val() + "<br>Бонус уже у Вас на почте").removeClass("hide");
+        $(".infront_submit", this).html("Зарегистрирован Ваш e-mail: <br>" + email.val() + "<br>Бонус уже у Вас на почте").removeClass("hide");
         $(".phone_title", this).html("Если Вы хотите, чтобы мы напомнили Вам о начале трансляции, <br>введите свой номер телефона").removeClass("hide");
         if (email.val() && phone.val() && check) {
-            window.location = 'https://mastervision.su/abramova-metaphysics-cure-key/bonus/';
             $(".phone_title", this).html('Ваш номер ' + phone.val() + ' зарегистрирован!');
             button.text('Отправляем...');
+            window.location = 'https://mastervision.su/roleva-and-yureva-monetization/bonus/';
         }
     });
     email.click(function () {
