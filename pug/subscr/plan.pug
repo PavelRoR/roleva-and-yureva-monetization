@@ -1,8 +1,8 @@
 section#plan
 	h3.general_title.plan_general_title План марафона:
-	.day.day_1
-		.container
-			img(src="img/day_img_1.png", alt="1 день").day_img.day_img_1
+	.container
+		.day.day_1.lazy
+			img(data-src="img/day_img_1.jpg", alt="1 день").lazy.day_img.day_img_1
 			.day_container.day_container_1
 				h4.day_container_title 1 день. 
 					span Быстрые деньги
@@ -10,9 +10,8 @@ section#plan
 					li Виды частной практики
 					li Стратегии запуска
 					li Описываем бизнес модель, тема и ниша
-	.day.day_2
-		.container
-			img(src="img/day_img_2.png", alt="2 день").day_img.day_img_2
+		.day.day_2.lazy
+			img(data-src="img/day_img_2.jpg", alt="2 день").lazy.day_img.day_img_2
 			.day_container.day_container_2
 				h4.day_container_title 2 день. 
 					span Что продавать
@@ -20,9 +19,8 @@ section#plan
 					li Создание продуктов
 					li Усиление существующих
 					li Работа с контентом и базой
-	.day.day_3
-		.container
-			img(src="img/day_img_3.png", alt="3 день").day_img.day_img_3
+		.day.day_3.lazy
+			img(data-src="img/day_img_3.jpg", alt="3 день").lazy.day_img.day_img_3
 			.day_container.day_container_3
 				h4.day_container_title 3 день. 
 					span Где брать клиентов
@@ -30,5 +28,5 @@ section#plan
 					li Продажа консультаций
 					li Продажа коучингов
 					li Работа со старыми клиентами
-			.clearfix
+				.clearfix
 		button.button.what_button(data-toggle="modal" data-target="#myModalForm") Записаться

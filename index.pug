@@ -4,14 +4,22 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		meta(name="author" content="Master Vision")
-		meta(name="description" content="Бесплатный 3-х дневный онлайн-марафон «Быстрые деньги в частной практике»")
-		meta(property="og:image" content="https://mastervision.su/roleva-and-yureva-monetization/img/banner.jpg")
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://ruautotrening.ru/roleva-and-yureva-monetization/">
+		<meta property="og:title" content="«Быстрые деньги в частной практике»" />
+		<meta property="og:description" content="Бесплатный 3-х дневный онлайн-марафон" />
+		meta(property="og:image" content="http://ruautotrening.ru/roleva-and-yureva-monetization/img/banner.jpg")
 		title Бесплатный 3-х дневный онлайн-марафон «Быстрые деньги в частной практике»
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
 		link(rel="stylesheet" href="css/subscribe_libs.min.css")
 		link(rel="stylesheet" href="css/styles.css")
+		<!-- Facebook Pixel Code -->
+		script
+			| !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '183143279045048');fbq('track', 'PageView');
+		noscript
+			img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=183143279045048&ev=PageView&noscript=1")
+		<!-- End Facebook Pixel Code -->
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 	body
@@ -32,8 +40,7 @@ html(lang="ru")
 		include pug/subscr/revs
 		include pug/subscr/footer
 		include pug/subscr/scripts
-		<!--BEGIN JIVOSITE CODE-->
-		//script
-			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
-		<!--END JIVOSITE CODE-->
-		iframe(name="results")#iframe_results
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+		script
+			| (function() {var widget_id = 'Af5C4Xmf3k';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
+		<!-- {/literal} END JIVOSITE CODE -->

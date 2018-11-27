@@ -5,13 +5,13 @@ section#reveiws
             .carousel-inner(role="listbox")
                 .item.active
                     a(href="img/certs/rev_1.jpg" data-fancybox="revs")
-                        img(src="img/certs/rev_1.jpg", alt="Отзыв 1")
+                        img(data-src="img/certs/rev_1.jpg", alt="Отзыв 1").lazy
                 .item
                     a(href="img/certs/rev_2.jpg" data-fancybox="revs")
-                        img(src="img/certs/rev_2.jpg", alt="Отзыв 2")
+                        img(data-src="img/certs/rev_2.jpg", alt="Отзыв 2").lazy
                 .item
                     a(href="img/certs/rev_3.jpg" data-fancybox="revs")
-                        img(src="img/certs/rev_3.jpg", alt="Отзыв 3")
+                        img(data-src="img/certs/rev_3.jpg", alt="Отзыв 3").lazy
             ol.carousel-indicators
                 li(data-target="#carousel_text" data-slide-to="0" class="active")
                 li(data-target="#carousel_text" data-slide-to="1")

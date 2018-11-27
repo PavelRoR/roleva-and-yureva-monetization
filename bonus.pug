@@ -12,9 +12,15 @@ html(lang="ru")
 		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
 		link(rel="stylesheet" href="../css/bootstrap.min.css")
 		link(rel="stylesheet" href="../css/bonus_styles.css")
-		script(src="//vk.com/js/api/openapi.js?153")
+		<!-- Facebook Pixel Code -->
 		script
-			| VK.init({apiId: 6314801,onlyWidgets: true});
+			| !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '183143279045048');fbq('track', 'PageView');
+		noscript
+			img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=183143279045048&ev=PageView&noscript=1")
+		<!-- End Facebook Pixel Code -->
+		script(src="//vk.com/js/api/openapi.js?159")
+		script
+			| VK.init({apiId: 6762364,onlyWidgets: true});
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 	body#bonus
@@ -81,7 +87,7 @@ html(lang="ru")
 								| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
 					.col-md-6.col-sm-6
 						#fb
-							.fb-comments(data-href="https://mastervision.su/roleva-and-yureva-monetization/bonus/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
+							.fb-comments(data-href="http://ruautotrening.ru/roleva-and-yureva-monetization/bonus/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
 		footer#footer
 			.container
 				.soc_buttons

@@ -1,26 +1,59 @@
 section#what
-    .container
-        p.what_pretitle Заработай 
-            span 100 000р. 
-            | в частной практике за несколько дней, 
-            br
-            | с помощью пошаговой методики для тренеров, психологов и мастеров
-        h3.general_title.what_general_title Что будет на марафоне:
-        mixin whats(cl,h4,p)
-            .what_container
-                .what_container_img(class= cl)
-                h4.what_container_title= h4
-                p.what_containert_text= p
-        .row
-            .col-md-4.col-sm-4
-                +whats('what_container_img_1','Денежное мышление:','Как убрать шаблоны мышления блокирующие денежный рост')
-            .col-md-4.col-sm-4
-                +whats('what_container_img_2','Силовое поле тренера:','Как развить харизму и стать сильным тренером')
-            .col-md-4.col-sm-4
-                +whats('what_container_img_3','Маркетинг и продажи:','Как сделать так, чтобы продажи шли даже когда вы спите')
-        .row.what_row_2
-            .col-md-4.col-sm-4.col-md-offset-2.col-sm-offset-2
-                +whats('what_container_img_4','Инструменты получение заявок: ','Настройка рекламы и набор базы с нуля, без бюджета')
-            .col-md-4.col-sm-4
-                +whats('what_container_img_5','Консультации и тренинги:','Как создать продукт, который хотят купить и успешно продвигать его')
-        button.button.what_button(data-toggle="modal" data-target="#myModalForm") Записаться
+	.container
+		#mail_section
+			form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form_newsletter.form_newsletter_mail_section
+				.col-lg-3.col-md-3
+					h3.mail_section_title.infront  Запишитесь сейчас и получите 3 видео-урока по монетизации
+					h3.infront_submit.hide
+				.col-lg-6.col-md-6
+						h4.mail_subtitle.phone_title Записаться через электронную почту:
+						.form_container
+							.email-block
+								input( type="hidden" value="1" name="required_fields[email]")
+								input(class="mail" name="Contact[email]" type="text" placeholder="Ваш email")
+							.phone-block.hide
+								input(type="hidden" value="0" name="required_fields[phone_number]")
+								input(class="phone" maxlength="255" name="Contact[phone_number]" type="tel" placeholder="79333333333")
+							button(type="submit").button.button_mail Записаться
+						.clearfix
+						p.alert_message Введите почту
+						<!--Обязательный параметр. Не удалять и не изменять!-->
+						input(type="hidden" value="511" name="Contact[id_newsletter]")
+						<!--API код канала рекламы-->
+						input(type="hidden" value="Ролева и Юрева Монетизация" name="Contact[id_advertising_channel_page]")
+						.checking
+							input(type="checkbox" id="check" checked).check
+							label(for="check").check_label Я согласен с 
+								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
+								|  по 152 - Ф3
+				.col-lg-3.col-md-3
+					h4.mail_subtitle или с помощью социальных сетей:
+					.mail_soc_buttons
+						a.mail_soc_buttons_link.soc_button_vk(href="https://vk.com/app6379730_-96028637#l=28;auto=1" target="_blank")
+							i.fab.fa-vk
+						a.mail_soc_buttons_link.soc_button_ms(href="https://m.me/1726493250936970?ref=ml17" target="_blank")
+							i.fab.fa-facebook-messenger
+		p.what_pretitle Заработай 
+			span 100 000р. 
+			| в частной практике за несколько дней, 
+			br
+			| с помощью пошаговой методики для тренеров, психологов и мастеров
+		h3.general_title.what_general_title Что будет на марафоне:
+		mixin whats(cl,h4,p)
+			.what_container
+				.what_container_img(class= cl).lazy(data-src="img/what_icons.png")
+				h4.what_container_title= h4
+				p.what_containert_text= p
+		.row
+			.col-md-4.col-sm-4
+				+whats('what_container_img_1','Денежное мышление:','Как убрать шаблоны мышления блокирующие денежный рост')
+			.col-md-4.col-sm-4
+				+whats('what_container_img_2','Силовое поле тренера:','Как развить харизму и стать сильным тренером')
+			.col-md-4.col-sm-4
+				+whats('what_container_img_3','Маркетинг и продажи:','Как сделать так, чтобы продажи шли даже когда вы спите')
+		.row.what_row_2
+			.col-md-4.col-sm-4.col-md-offset-2.col-sm-offset-2
+				+whats('what_container_img_4','Инструменты получение заявок: ','Настройка рекламы и набор базы с нуля, без бюджета')
+			.col-md-4.col-sm-4
+				+whats('what_container_img_5','Консультации и тренинги:','Как создать продукт, который хотят купить и успешно продвигать его')
+		button.button.what_button(data-toggle="modal" data-target="#myModalForm") Записаться
