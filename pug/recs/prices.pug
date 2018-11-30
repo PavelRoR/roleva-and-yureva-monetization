@@ -1,0 +1,124 @@
+include ../_prices
+
+section#prices
+	.container
+		<h3 class="general_title prices_general_title">Выберите <span>свой </span>пакет участия</h3>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="price">
+					<div class="price_head">
+						<h4 class="price_head_title">Пакет<span>Standart</span></h4>
+					</div>
+					<div class="price_body">
+						<ol class="price_body_list">
+							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
+							<li> <span>Записи видео + Презентации</span></li>
+							<li> <span>Алгоритмы, Скрипты, Чек-листы по Монетизации</span></li>
+							<li> <span>Skype-чат</span></li>
+						</ol>
+					</div>
+					<div class="price_footer">
+						p.cost.cost_full Стоимость:
+							span=full_1
+						p.cost.cost_sale Скидка:
+							span#ale_1= sale_1
+						p.cost.cost_today Стоимость сегодня:
+							span#today_1= today_1
+						a.button.button_cost(href= link_1 target="_blank")#link_1 Выбрать
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="price">
+					<div class="price_head">
+						<h4 class="price_head_title">Пакет<span>Gold</span></h4>
+					</div>
+					<div class="price_body">
+						<ol class="price_body_list">
+							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
+							<li> <span>Записи видео + Презентации</span></li>
+							<li> <span>Алгоритмы, Скрипты, Чек-листы по Монетизации</span></li>
+							<li> <span>Skype-чат</span></li>
+							<li> <span>Проверка ДЗ от преподавателей</span></li>
+						</ol>
+					</div>
+					<div class="price_footer">
+						p.cost.cost_full Стоимость:
+							span=full_2
+						p.cost.cost_sale Скидка:
+							span#ale_2= sale_2
+						p.cost.cost_today Стоимость сегодня:
+							span#today_2= today_2
+						a.button.button_cost(href= link_2 target="_blank")#link_2 Выбрать
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="price">
+					<div class="price_head">
+						<h4 class="price_head_title">Пакет<span>Vip</span></h4>
+					</div>
+					<div class="price_body">
+						<ol class="price_body_list">
+							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
+							<li> <span>Записи видео + Презентации</span></li>
+							<li> <span>Алгоритмы, Скрипты, Чек-листы по Монетизации</span></li>
+							<li> <span>Skype-чат</span></li>
+							<li> <span>Проверка ДЗ от преподавателей</span></li>
+							<li> <span>10 часовых консультаций по теме каждого урока от консультанта</span></li>
+						</ol>
+					</div>
+					<div class="price_footer">
+						p.cost.cost_full Стоимость:
+							span=full_3
+						p.cost.cost_sale Скидка:
+							span#ale_3= sale_3
+						p.cost.cost_today Стоимость сегодня:
+							span#today_3= today_3
+						a.button.button_cost(href= link_3 target="_blank")#link_3 Выбрать
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="price">
+					<div class="price_head">
+						<h4 class="price_head_title">Пакет<span>Platinum</span></h4>
+					</div>
+					<div class="price_body">
+						<ol class="price_body_list">
+							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
+							<li> <span>Записи видео + Презентации</span></li>
+							<li> <span>Алгоритмы, Скрипты, Чек-листы по Монетизации</span></li>
+							<li> <span>Skype-чат</span></li>
+							<li> <span>Проверка ДЗ от преподавателей</span></li>
+							<li> <span>10 часовых консультаций по теме каждого урока от Анны Ролевой и Вероники Юриной</span></li>
+						</ol>
+					</div>
+					<div class="price_footer">
+						p.cost.cost_full Стоимость:
+							span=full_4
+						p.cost.cost_sale Скидка:
+							span#ale_4= sale_4
+						p.cost.cost_today Стоимость сегодня:
+							span#today_4= today_4
+						a.button.button_cost(href= link_4 target="_blank")#link_4 Выбрать
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="prepayment">
+			<h4 class="prepaymant_title">Акция!!!</h4>
+			p.prepayment_text Платите 1900 рублей, бонусом получаете 
+				span#prepayment_bonus= prep_bonus
+				<br />
+				| На счет зачисляется 
+				span#prepayment_credited=prep_cred 
+			a.button.prepayment_button(href= prep_link target="_blank" id="prepayment_link") Оплатить 1 900р.
+		</div>
+		<div class="timer">
+			<h4 class="timer_title">Скидка уменьшится через:</h4>
+			<div class="clock"></div>
+			<div class="clock-stop"></div>
+		</div>
+	</div>
+</section>

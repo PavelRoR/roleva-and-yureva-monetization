@@ -5,43 +5,37 @@ html(lang="ru")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://ruautotrening.ru/roleva-and-yureva-monetization/records/">
+		<meta property="og:url" content="http://ruautotrening.ru/roleva-and-yureva-monetization/sale/">
 		<meta property="og:title" content="«Быстрые деньги в частной практике»" />
-		<meta property="og:description" content="Записи онлайн-марафона" />
-		meta(property="fb:app_id" content="2030481470529055")
-		title Записи онлайн-марафона «Быстрые деньги в частной практике»
+		<meta property="og:description" content="Специальное предложение только для выпускников MasterVision" />
+		title Специальное предложение только для выпускников MasterVision
 		link(rel="icon" type="image/x-icon" href="../favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
-		link(rel="stylesheet" href="../css/recs.css")
-		script(src="//vk.com/js/api/openapi.js?159")
-		script
-			| VK.init({apiId: 6762364,onlyWidgets: true});
+		link(rel="stylesheet" href="../css/sale.css")
 		<!-- Facebook Pixel Code -->
-		script
+		//script
 			| !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '183143279045048');fbq('track', 'PageView');
-		noscript
+		//noscript
 			img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=183143279045048&ev=PageView&noscript=1")
 		<!-- End Facebook Pixel Code -->
-		script 
+		//script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 	body
-		noscript
+		//noscript
 			img(src="https://vk.com/rtrg?p=VK-RTRG-11201-hHU9b" style="position:fixed; left:-999px;" alt="")
 		<!-- Yandex.Metrika counter -->
-		script(type="text/javascript")
+		//script(type="text/javascript")
 			| (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35450015 = new Ya.Metrika({ id:35450015, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
-		noscript
+		//noscript
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		div#fb-root
-		script
-			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
-		include pug/recs/main
+		include pug/sale/main
 		include pug/recs/if
 		include pug/recs/plan
 		include pug/recs/reach
-		include pug/recs/prices
-		include pug/recs/videos
+		include pug/sale/prices
+		include pug/sale/about
+		include pug/sale/revs
 		include pug/recs/footer
-		include pug/recs/scripts
+		include pug/sale/scripts
