@@ -4,12 +4,12 @@ section#prices
 	.container
 		<h3 class="general_title prices_general_title">Выберите <span>свой </span>пакет участия</h3>
 		<div class="row">
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-4">
 				<div class="price">
 					<div class="price_head">
 						<h4 class="price_head_title">Пакет<span>Standart</span></h4>
 					</div>
-					<div class="price_body">
+					<div class="price_body price_body_small">
 						<ol class="price_body_list">
 							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
 							<li> <span>Записи видео + Презентации</span></li>
@@ -28,12 +28,12 @@ section#prices
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-4">
 				<div class="price">
 					<div class="price_head">
 						<h4 class="price_head_title">Пакет<span>Gold</span></h4>
 					</div>
-					<div class="price_body">
+					<div class="price_body price_body_small">
 						<ol class="price_body_list">
 							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
 							<li> <span>Записи видео + Презентации</span></li>
@@ -53,12 +53,12 @@ section#prices
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-4">
 				<div class="price">
 					<div class="price_head">
 						<h4 class="price_head_title">Пакет<span>Vip</span></h4>
 					</div>
-					<div class="price_body">
+					<div class="price_body price_body_small">
 						<ol class="price_body_list">
 							<li> <span>10 уроков по 3 часа 1 раз в неделю</span></li>
 							<li> <span>Записи видео + Презентации</span></li>
@@ -79,7 +79,9 @@ section#prices
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+		</div>
+		.row
+			<div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2">
 				<div class="price">
 					<div class="price_head">
 						<h4 class="price_head_title">Пакет<span>Platinum</span></h4>
@@ -91,7 +93,7 @@ section#prices
 							<li> <span>Алгоритмы, Скрипты, Чек-листы по Монетизации</span></li>
 							<li> <span>Skype-чат</span></li>
 							<li> <span>Проверка ДЗ от преподавателей</span></li>
-							<li> <span>10 часовых консультаций по теме каждого урока от Анны Ролевой и Вероники Юриной</span></li>
+							<li> <span>10 получасовых консультаций от Анны Ролевой и Вероники Юриной</span></li>
 						</ol>
 					</div>
 					<div class="price_footer">
@@ -105,8 +107,40 @@ section#prices
 					</div>
 				</div>
 			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="price">
+					<div class="price_head">
+						<h4 class="price_head_title">Пакет<span>Под ключ</span></h4>
+					</div>
+					<div class="price_body">
+						<ul class="price_body_list">
+							li
+								span 20 часов индивидуальной работы с Анной Ролевой и Вероникой Юриной
+							li
+								span Полная упаковка проекта
+							li
+								span Это единственный пакет, где делаем вам упаковку проекта!
+							li
+								span Гарантия трудоустройства в MasterVision при условии прохождения тренеркого экзамена
+						</ul>
+						h4.price_body_subtitle Программа индивидуальной работы 
+							span.more(data-toggle="modal" data-target="#program") Смотреть 
+								i.far.fa-file-alt(aria-hidden="true")
+					</div>
+					<div class="price_footer">
+						p.cost.cost_sale.cost_no &nbsp;
+							span &nbsp;
+						p.cost.cost_today.cost_no &nbsp;
+							span &nbsp;
+						p.cost Стоимость:
+							span=full_5
+						a.button.button_cost(href= link_5 target="_blank")#link_5 Выбрать
+					</div>
+				</div>
+			</div>
+		
 		</div>
-		<div class="prepayment">
+		.prepayment
 			<h4 class="prepaymant_title">Акция!!!</h4>
 			p.prepayment_text Платите 1900 рублей, бонусом получаете 
 				span#prepayment_bonus= prep_bonus
@@ -115,10 +149,7 @@ section#prices
 				span#prepayment_credited=prep_cred 
 			a.button.prepayment_button(href= prep_link target="_blank" id="prepayment_link") Оплатить 1 900р.
 		</div>
-		<div class="timer">
-			<h4 class="timer_title">Скидка уменьшится через:</h4>
-			<div class="clock"></div>
-			<div class="clock-stop"></div>
-		</div>
-	</div>
-</section>
+		.timer
+			h4.timer_title Скидка уменьшится через:
+			.clock
+			.clock-stop
