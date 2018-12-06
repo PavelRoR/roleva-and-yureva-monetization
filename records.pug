@@ -24,6 +24,10 @@ html(lang="ru")
 		<!-- End Facebook Pixel Code -->
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-130434463-1")
+		script
+			| window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-130434463-1');
 	body
 		noscript
 			img(src="https://vk.com/rtrg?p=VK-RTRG-11201-hHU9b" style="position:fixed; left:-999px;" alt="")
